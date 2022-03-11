@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Welcome from './Components/Welcome';
+import '../node_modules/font-awesome/css/font-awesome.min.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import AddTask  from './Components/AddTask';
+import ShowTasks from './Components/ShowTasks'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Router>
+        <div>
+          <Routes>
+            <Route path="/toDoList" element={<Welcome/>}/>
+            <Route path="/addTask" element={<AddTask/>}/>
+            <Route path="/showTasks" element={<ShowTasks/>}/>
+          </Routes>
+        </div>
+      </Router>
+    </React.Fragment>
   );
 }
 

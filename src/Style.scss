@@ -1,0 +1,139 @@
+/* Styling the footer */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(241, 237, 237);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: rgb(34, 34, 34);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    background-image: linear-gradient(142deg, rgba(232, 238, 238, 1) 0%, rgba(122, 181, 233, 1) 100%);
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container h2 {
+    line-height: 50px;
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    font-size: 35px;
+}
+
+.icons-container a {
+    color: black;
+    text-shadow: 5px 5px 5px black;
+}
+
+/* Styling the navbar */
+.nav-bar {
+    color: black;
+    height: 70px;
+    width: 100%;
+    background: rgb(232, 238, 238);
+    background: radial-gradient(circle, rgba(232, 238, 238, 1) 75%, rgba(122, 181, 233, 1) 100%);
+}
+
+.logo {
+    font-size: 36px;
+    line-height: 100px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar ul {
+    float: right;
+    margin-right: 20px;
+}
+
+.nav-bar ul li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 10px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+@media (max-width: 952px) {
+    .logo {
+       font-size: 28px; 
+    }
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-bar ul  {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        float: none;
+    }
+    .nav-bar ul li {
+        display: flex;
+        flex-direction: column;
+        line-height: 0px;
+    }
+}
+
+/* Styling welcome page */
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 45px;
+    margin: auto 30px auto 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+}
+
+.welcome-section h3 {
+    line-height: 35px;
+}
+
+.welcome-section p {
+    line-height: 20px;
+    font-size: 18px;
+}
+
+@media (max-width: 952px) {
+    .welcome-section {
+        margin-top: 80px;
+        margin-bottom: auto;
+    }
+}
+
+/* Styling addTask page */
+.task-form {
+    margin-top: 80px;
+}
