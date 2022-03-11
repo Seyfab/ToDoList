@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/toDoList/static/css/main.f37e4276.css",
-    "main.js": "/toDoList/static/js/main.50290d59.js",
-    "static/media/fontawesome-webfont.svg?v=4.7.0": "/toDoList/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
-    "static/media/fontawesome-webfont.eot": "/toDoList/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
-    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/toDoList/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
-    "static/media/fontawesome-webfont.woff?v=4.7.0": "/toDoList/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
-    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/toDoList/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
-    "index.html": "/toDoList/index.html",
-    "main.f37e4276.css.map": "/toDoList/static/css/main.f37e4276.css.map",
-    "main.50290d59.js.map": "/toDoList/static/js/main.50290d59.js.map"
+    "main.css": "/ToDoList/static/css/main.d92498ab.css",
+    "main.js": "/ToDoList/static/js/main.50290d59.js",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/ToDoList/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/ToDoList/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/ToDoList/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/ToDoList/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/ToDoList/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "index.html": "/ToDoList/index.html",
+    "main.d92498ab.css.map": "/ToDoList/static/css/main.d92498ab.css.map",
+    "main.50290d59.js.map": "/ToDoList/static/js/main.50290d59.js.map"
   },
   "entrypoints": [
-    "static/css/main.f37e4276.css",
+    "static/css/main.d92498ab.css",
     "static/js/main.50290d59.js"
   ]
 }
