@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ToDoList/static/css/main.f9b014b3.css",
+    "main.css": "/ToDoList/static/css/main.eefa1af8.css",
     "main.js": "/ToDoList/static/js/main.76b6d6a0.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/ToDoList/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/ToDoList/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
@@ -8,11 +8,11 @@
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/ToDoList/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/ToDoList/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "index.html": "/ToDoList/index.html",
-    "main.f9b014b3.css.map": "/ToDoList/static/css/main.f9b014b3.css.map",
+    "main.eefa1af8.css.map": "/ToDoList/static/css/main.eefa1af8.css.map",
     "main.76b6d6a0.js.map": "/ToDoList/static/js/main.76b6d6a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9b014b3.css",
+    "static/css/main.eefa1af8.css",
     "static/js/main.76b6d6a0.js"
   ]
 }
