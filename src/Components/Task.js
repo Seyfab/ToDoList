@@ -8,7 +8,7 @@ const Task = () => {
             <p className='task-date'>Date</p>
             <p>Time</p>
             <button>
-                Remove Task
+                Remove 
             </button>
         </div>
     </React.Fragment>
