@@ -1,22 +1,14 @@
 import React from 'react'
-import { FaCirclePlus } from "react-icons/fa";
-import { useNavigate, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import {HiClipboardList} from "react-icons/hi"
 
 const NavBar = () => {
     return (
         <React.Fragment>
             <nav className='nav-bar'>
-                <label className='logo'>
-                    <Link to="/toDoList">ToDo</Link>
+                <label className='logo-label'>
+                <h3><Link to="/toDoList" className='logo'> <HiClipboardList style={{fontSize:"0.7em", margin:"0px"}}/> ToDo</Link> </h3>
                 </label>
-                <ul>
-                    <li><Link to="/toDoList"><i class="fa fa-home" aria-hidden="true"></i>
-                        Home</Link></li>
-                    <li><Link to="/addTask"><i class="fa fa-plus-circle" aria-hidden="true"></i>
-                        Add-Task</Link></li>
-                    <li><Link to="/showTasks"><i class="fa fa-list" aria-hidden="true"></i>
-                        Show-Tasks</Link></li>
-                </ul>
             </nav>
         </React.Fragment>
     )

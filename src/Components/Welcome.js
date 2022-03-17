@@ -1,22 +1,32 @@
 import React from 'react'
-import Footer from './Footer'
 import NavBar from './NavBar'
-import ToDoList from './ShowTasks'
-import '/home/ragnar/Web/To Do App/ToDoApp2.0/to-do-app-2.0/src/Style.scss'
+import Footer from './Footer'
+import { useNavigate } from 'react-router-dom'
 
 const Welcome = () => {
+
+  const navigate = useNavigate()
+
+  const start = () => {
+    navigate("/Task")
+  }
+
   return (
     <React.Fragment>
-      <section className='main-container'>
+      <div className='main-container'>
         <NavBar/>
-        <section className='welcome-section'>
-          <h3>Welcome to 'To Do List'</h3>
-          <p>This website created with react.js for learning purposes</p>
-          <p>Here We can create a list of tasks and easily manage it by adding titles, dates and times for every task</p>
-          <p>We can also delete, add and also check if the taks is done</p>
-        </section>
+        <div className='welcome'>
+            <h3>Welcome To Do List</h3>
+            <p>This website is created with react.js for learning purposes, Here you can manage your
+                tasks by adding, remove and check the task if it's done.
+            </p>
+            <button onClick={start}>
+                Start
+            </button>
+        </div>
         <Footer/>
-      </section>
+      </div>
+      
     </React.Fragment>
   )
 }

@@ -7,7 +7,7 @@ import { FaFacebook, FaInstagram, FaGithub, FaTwitter, FaEnvelope } from "react-
 const Footer = () => {
   return (
     <footer className='footer-container'>
-      <h2 style={{color: "black"}}>Contact Us</h2>
+      <h2 style={{color: "rgb(75, 75, 75)"}}>Contact Us</h2>
       <section className='icons-container'>
         <a href='https://www.facebook.com/profile.php?id=100014285222103' target='_blank'>
           <FaFacebook />

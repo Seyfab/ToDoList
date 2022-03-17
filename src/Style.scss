@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@100&display=swap");
+@import url("https://cdn.syncfusion.com/ej2/material.css");
+
 /* Styling the footer */
 
 * {
@@ -6,7 +10,21 @@
 }
 
 body {
-    background-color: rgb(241, 237, 237);
+    background-color: rgb(245, 243, 243);
+}
+
+button {
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    margin: 20px auto 10px auto;
+    font-size: 1.2em;
+}
+button:hover {
+    background-color: rgb(7, 88, 102);
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .main-container {
@@ -20,13 +38,16 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: auto;
-    background-image: linear-gradient(142deg, rgba(232, 238, 238, 1) 0%, rgba(122, 181, 233, 1) 100%);
+    background-color: white;
     align-items: center;
     justify-content: center;
+    border-top: 1px solid;
+    border-color: rgb(211, 211, 211);
 }
 
 .footer-container h2 {
     line-height: 50px;
+    margin-top: 20px;
 }
 
 .icons-container {
@@ -36,104 +57,140 @@ body {
     align-items: center;
     gap: 35px;
     font-size: 35px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .icons-container a {
-    color: black;
+    color: rgb(75, 75, 75);
     text-shadow: 5px 5px 5px black;
+}
+
+.icons-container a:hover {
+    color: rgb(39, 39, 39);
+    transition: 0.5s;
 }
 
 /* Styling the navbar */
 .nav-bar {
-    color: black;
     height: 70px;
     width: 100%;
-    background: rgb(232, 238, 238);
-    background: radial-gradient(circle, rgba(232, 238, 238, 1) 75%, rgba(122, 181, 233, 1) 100%);
+    background-color: rgb(7, 88, 102);
+    color: white;
 }
 
 .logo {
-    font-size: 36px;
-    line-height: 100px;
-    padding: 0 100px;
-    font-weight: bold;
-}
-
-.logo a {
+    font-size: 40px;
+    color: white;
     text-decoration: none;
-    color: black;
 }
 
-.nav-bar ul {
+.logo-label {
     float: right;
-    margin-right: 20px;
-}
-
-.nav-bar ul li {
-    display: inline-block;
-    line-height: 100px;
-    margin: 0 10px;
-}
-
-.nav-bar ul li a {
-    text-decoration: none;
-    font-size: 18px;
-    color: black;
+    margin: 10px 50px 0 0;
 }
 
 @media (max-width: 952px) {
     .logo {
-       font-size: 28px; 
+        font-size: 28px;
     }
     .nav-bar {
         display: flex;
-        flex-direction: column;
-    }
-    .nav-bar ul  {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        float: none;
-    }
-    .nav-bar ul li {
-        display: flex;
-        flex-direction: column;
-        line-height: 0px;
     }
 }
 
-/* Styling welcome page */
-.welcome-section {
+/* Styling the welcome page */
+.welcome {
     display: flex;
     flex-direction: column;
-    background-color: white;
-    align-items: center;
     justify-content: center;
-    padding: 45px;
-    margin: auto 30px auto 30px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: gray;
-}
-
-.welcome-section h3 {
-    line-height: 35px;
-}
-
-.welcome-section p {
-    line-height: 20px;
-    font-size: 18px;
+    text-align: center;
+    margin: auto 150px auto 150px;
+    padding: 50px;
+    border: 1px solid;
+    border-color: rgb(211, 211, 211);
+    border-radius: 25px;
 }
 
 @media (max-width: 952px) {
-    .welcome-section {
-        margin-top: 80px;
-        margin-bottom: auto;
+    .welcome {
+        margin: auto 25px auto 25px;
+    }
+    .welcome h3 {
+        font-size: 15px;
+    }
+    .welcome p {
+        font-size: 14px;
     }
 }
 
-/* Styling addTask page */
-.task-form {
-    margin-top: 80px;
+/* Styling main page */
+
+.task-manager {
+    display: flex;
+    flex-direction: row;
+}
+
+.task-container {
+    height: 80vh;
+    overflow-y: auto;
+    width: 100%;
+    margin: 25px;
+    border: 1px solid;
+    border-color: rgb(211, 211, 211);
+    border-radius: 25px;
+    padding: 10px;
+}
+
+@media (max-width: 952px) {
+}
+
+/* Styling side bar page */
+
+.side-bar {
+    width: 300px;
+    height: 80vh;
+    border: 1px solid;
+    border-color: rgb(211, 211, 211);
+    background-color: white;
+    margin: 25px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    margin-top: 12px;
+}
+
+/* Styling task component */
+.task {
+    width: 250px;
+    height: 150px;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgb(117, 117, 117);
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid;
+    border-color: rgb(211, 211, 211);
+    margin: 20px;
+}
+
+.task:hover {
+    width: 260px;
+    height: 160px;
+    transition: 1s;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.task button {
+    float: right;
 }

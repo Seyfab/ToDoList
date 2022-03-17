@@ -1,9 +1,8 @@
 import React from 'react';
+import Main from './Components/Main';
 import Welcome from './Components/Welcome';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import AddTask  from './Components/AddTask';
-import ShowTasks from './Components/ShowTasks'
 
 function App() {
   return (
@@ -12,8 +11,7 @@ function App() {
         <div>
           <Routes>
             <Route path="/toDoList" element={<Welcome/>}/>
-            <Route path="/addTask" element={<AddTask/>}/>
-            <Route path="/showTasks" element={<ShowTasks/>}/>
+            <Route path="/Task" element={<Main/>}/>
           </Routes>
         </div>
       </Router>
