@@ -33,31 +33,31 @@ const Welcome = () => {
 
   const addTask = (event) => {
     event.preventDefault();
-    if(value.taskName !== ""){
+    if (value.taskName !== "") {
       const newTasks = value.tasks
-    const task = {
-      taskName: value.taskName,
-      taskDate: value.date,
-      taskTime: value.time,
-      completed: false,
-      id: value.id
-    }
-    newTasks.push(task)
-    setValue((prevState => {
-      return {
-        date: "",
-        time: "",
-        taskName: "",
-        tasks: newTasks,
-        id: prevState.id + 1
+      const task = {
+        taskName: value.taskName,
+        taskDate: value.date,
+        taskTime: value.time,
+        completed: false,
+        id: value.id
       }
-    }))
-    localStorage.setItem("tasks", JSON.stringify(value.tasks))
+      newTasks.push(task)
+      setValue((prevState => {
+        return {
+          date: "",
+          time: "",
+          taskName: "",
+          tasks: newTasks,
+          id: prevState.id + 1
+        }
+      }))
+      localStorage.setItem("tasks", JSON.stringify(value.tasks))
     }
-    else{
-      alert("Missing information !!\nPlease enter the task name") 
+    else {
+      alert("Missing information !!\nPlease enter the task name")
     }
-    
+
   }
 
   const newTime = (event) => {
@@ -154,7 +154,7 @@ const Welcome = () => {
                   Time
                 </strong>
                 <TimePicker
-                className='time-picker'
+                  className='time-picker'
                   placeholder="Select Time"
                   use12Hours
                   showSecond={false}
