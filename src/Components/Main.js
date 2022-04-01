@@ -154,6 +154,7 @@ const Welcome = () => {
                   Time
                 </strong>
                 <TimePicker
+                className='time-picker'
                   placeholder="Select Time"
                   use12Hours
                   showSecond={false}
