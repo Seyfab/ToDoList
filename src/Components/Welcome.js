@@ -23,7 +23,7 @@ const Welcome = () => {
       <div className='main-container'>
         <NavBar />
         <div className='welcome'>
-          <h3>Welcome To Do List</h3>
+          <h3>Welcome to 'To Do List'</h3>
           <p>This website is created with react.js for learning purposes, Here you can manage your
             tasks by adding, remove and check the task if it's done.
           </p>
