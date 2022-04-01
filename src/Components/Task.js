@@ -27,7 +27,6 @@ const Task = (props) => {
         <button onClick={() => props.removeTask(props.n.id)} className='remove-button'>
           Remove
         </button>
-<p>test test</p>
       </div>
     </React.Fragment>
   )
