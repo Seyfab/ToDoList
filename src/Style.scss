@@ -221,3 +221,60 @@ button:hover {
     margin-top: 10px;
     gap: 10px;
 }
+
+@media (max-width: 952px) {
+    .task-manager {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sideBar-container strong{
+        font-size: 0.9rem;
+    }
+
+    .side-bar {
+        height: 150px;
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+
+    .task-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px;
+        width: 50%;
+        height: 200px;
+    }
+
+    .input-container {
+        margin: 0;
+        width: 100px;
+        padding: 0;
+    }
+
+    .task h3 {
+        font-size: 0.8rem;
+    }
+
+    .task p {
+        font-size: 0.8rem;
+    }
+
+    .task label {
+        font-size: 0.8rem;
+    }
+
+    .task button {
+        font-size: 0.8rem;
+    }
+
+    .task {
+        height: 150px;
+        width: 180px;
+    }
+}
