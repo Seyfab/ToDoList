@@ -105,7 +105,6 @@ const Welcome = () => {
         tasks: afterDelete
       }
     })
-    console.log("task deleted")
 
   }
 
