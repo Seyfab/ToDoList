@@ -96,7 +96,7 @@ const Welcome = () => {
   }
 
   const removeTask = (id) => {
-    var afterDelete = []
+    var afterDelete = value.tasks
     afterDelete = value.tasks.filter(n => n.id !== id)
     localStorage.setItem("tasks", JSON.stringify(afterDelete))
     setValue((prevState) => {
