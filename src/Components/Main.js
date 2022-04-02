@@ -18,7 +18,7 @@ const Welcome = () => {
 
   useEffect(() => {
     const t = value.tasks
-    if (t === []) {
+    if (t.length !== 0 ) {
       const l = t.length
       const idd = value.tasks[l - 1].id
       setValue((prevState) => {
@@ -28,6 +28,14 @@ const Welcome = () => {
         }
       })
       console.log("the value of l is " + l)
+    }
+    else {
+      setValue((prevState) => {
+        return {
+          ...prevState,
+          id: 0
+        }
+      })
     }
   }, [])
 
